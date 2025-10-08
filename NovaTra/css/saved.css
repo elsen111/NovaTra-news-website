@@ -1,0 +1,7 @@
+/* HEADER PART */
+/* To make search box container unvisible */
+.search-box-container { display: none !important; }
+
+
+/* MAIN Part */
+main > section { padding: 5rem  0 !important; }

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Font Awesome Library -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Favicon -->
+         <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+        <!-- CSS stylesheets -->
+        <link rel="stylesheet" href="../css/utils.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/saved.css">
+        <link rel="stylesheet" href="../css/media.css">
+
+        <title> NovaTra </title>
+    </head>
+    
+    <body id="top">
+        <!-- START OF THE HEADER PART -->
+         <header class="fixed">
+            <div class="header-container flex sp-between section transition relative">
+                <!-- Logo and Title -->
+                <div class="logo-title flex">
+                    <div class="logo">
+                        <img src="../img/logo.png" class="block f-height f-width" alt="website logo">
+                    </div>
+                    <h1 class="title fs-35 fw-700">
+                        <span> Nova </span>
+                        <span> Tra </span>
+                    </h1>
+                </div>
+                
+                <!-- Main Navigation -->
+                <div class="top-menu flex sp-between transition relative after">
+                    <div class="x-mark-container">
+                        <i class="fa-solid fa-xmark text-primary-color"></i>
+                    </div>
+                    
+                    <div class="header-nav-container transition">
+                        <nav class="header-nav f-height flex">
+                            <ul class="navbar-list flex list">
+                                <li><a href="./index.html" class="text-primary-color capitalized fs-16 fw-700 link relative after block transition"> home </a></li>
+                                <li><a href="./categories.html" class="text-primary-color capitalized fs-16 fw-700 link relative after block transition"> explore all </a></li>
+                                <li><a href="./suggested.html" class="text-primary-color capitalized fs-16 fw-700 link relative after block transition"> for you </a></li>
+                                <li><a href="#" class="active-link text-primary-color capitalized fs-16 fw-700 link relative after block transition"> saved </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                
+                    <div class="right-side f-height flex">
+                        <!-- Search Box -->
+                        <div class="search-box-container transition">
+                            <div class="relative transition f-height f-width flex flex-end"> 
+                                <input type="text" name="search-box" class="block f-height fs-16 transition search-box" placeholder="Search news...">
+                                <i class="fa-duotone fa-solid fa-magnifying-glass search-icon pointer transition text-primary-color flex flex-centered"></i> <!--fa-beat when hovering-->
+                            </div>
+                        </div>
+                    
+                        <!-- Registration Button -->
+                        <div class="registration">
+                            <a href="./login.html" class="link capitalized fs-16 fw-700 white transition"> sign in </a>
+                        </div>
+
+                        <!-- Dark / Light Mode -->
+                        <div class="dark-light-mode-box flex flex-end pointer">
+                            <img src="../img/light-mode.png" class="mode-img f-height transition" alt="light mode icon">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-bar-container text-primary-color">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+         </header>
+        <!-- END OF THE HEADER PART -->
+
+
+
+        <!-- START OF THE MAIN PART -->
+        <main class="relative">
+            <!-- Preloader -->
+            <div id="preloader">
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- Start of the Saved News Section -->
+            <section class="saved-news">
+                <div class="saved-news-container section">
+                    <h3 class="capitalized section-title fw-900 text-primary-color"> Saved news </h3>
+                    <div class="news-cards-container"></div>
+
+                    <!-- Button to load more saved news from the LocalStorage -->
+                    <div>
+                        <button class="pointer transition white centered block fs-16 uppercased load-more-btn"> Load more </button>
+                    </div>
+
+                    <!-- Lazy loading -->
+                    <div class="loader hidden">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of the Saved News Section -->
+
+            <!-- Back to top button -->
+            <div class="link-to-top-btn transition flex flex-centered pointer">
+                <a href="#top" class="link white">
+                    <i class="fa-solid fa-angle-up fa-2x"></i>
+                </a>
+            </div>
+         </main>
+        <!-- END OF THE MAIN PART -->
+
+
+
+        <!-- START OF THE FOOTER PART -->
+         <footer class="relative">
+            <div class="footer-container section">
+                <div class="first-row flex sp-between">
+                    <!-- Logo & Title -->
+                    <div class="logo-title flex">
+                        <div class="logo">
+                            <img src="../img/logo.png" class="block f-height f-width" alt="website logo">
+                        </div>
+                        <h1 class="title fw-700 fs-24">
+                            <span> Nova </span>
+                            <span> Tra </span>
+                        </h1>
+                    </div>
+
+                    <!-- Footer (second) Navigation Bar -->
+                    <section class="secondary-navigation-container">
+                        <nav class="secondary-navigation">
+                            <ul class="list flex flex-centered">
+                                <li>
+                                    <a href="#" class="link fs-16 fw-700 transition after block relative"> About </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link fs-16 fw-700 transition after block relative"> Terms of Use </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link fs-16 fw-700 transition after block relative"> Privacy Policy </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link fs-16 fw-700 transition after block relative">Manage Cookies </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link fs-16 fw-700 transition after block relative"> Contact </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+
+                    <!-- Subscription box -->
+                    <div class="subscription-box flex">
+                            <input type="email" name="search-box" class="block f-height fs-16 transition" placeholder="Your Email">
+                            <button class="subscription-button pointer transition white f-height"> Subscribe </button>
+                    </div>
+                </div>
+
+                <div class="second-row">
+                    <!-- Social Media Links -->
+                    <div class="social-media-icons flex flex-centered">
+                        <a href="" class="link"><i class="fa-brands fa-youtube text-primary-color transition fs-24"></i></a>
+                        <a href="" class="link"><i class="fa-brands fa-instagram text-primary-color transition fs-24"></i></a>
+                        <a href="" class="link"><i class="fa-brands fa-facebook text-primary-color transition fs-24"></i></a>
+                        <a href="" class="link"><i class="fa-brands fa-x-twitter text-primary-color transition fs-24"></i></a>
+                        <a href=""><i class="fa-brands fa-square-linkedin text-primary-color transition fs-24"></i></a>
+                    </div>
+                </div>
+
+                <div class="third-row">
+                    <!-- Copyright Information -->
+                    <p class="copyright fs-12">
+                        © 2025 Your News Website. All rights reserved. Unauthorized use and/or duplication of this material without express and written permission is strictly prohibited.
+                    </p>
+                </div>
+            </div>
+         </footer>
+        <!-- END OF THE FOOTER PART -->
+
+        <!-- JS files -->
+         <script type="module" src="../js/main.js"></script>
+         <script type="module" src="../js/saved.js"></script>
+    </body>
+</html>

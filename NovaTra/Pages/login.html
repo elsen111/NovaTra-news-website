@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Font Awesome Library -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Favicon -->
+         <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+        <!-- CSS stylesheets -->
+        <link rel="stylesheet" href="../css/utils.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="../css/media.css">
+        
+        <title> Sign in </title>
+    </head>
+
+    <body class="f-width">
+        <!-- Start of the Form Section -->
+        <div class="wrapper absolute f-height flex flex-centered transition">
+            <div class="form-container transition">
+                <p class="login-para capitalized text-primary-color fw-900 fs-24"> sign in </p>
+                <!-- Form -->
+                <form action="" class="text-primary-color">
+                    <div class="relative flex sign-up-element">
+                        <!-- Full Name -->
+                        <input type="text" name="fullName" id="fullName" class="f-width transition" required>
+                        <label for="email" class="absolute fs-12 transition"> Full Name </label>
+                    </div>
+
+                    <div class="relative flex signin-element">
+                        <!-- E-mail -->
+                        <input type="email" name="email" id="email" class="f-width transition" required>
+                        <label for="email" class="absolute fs-12 transition"> Email </label>
+                        <i class="fa-solid fa-envelope absolute fs-16 transition"></i>
+                    </div>
+
+                    <div class="relative flex">
+                        <!-- Password -->
+                        <input type="password" name="password" id="password" class="event-input f-width transition" required>
+                        <label for="password" class="absolute fs-12 transition"> Password </label>
+                        <i class="event-element fa-solid fa-eye absolute fs-16 transition"></i>
+                    </div>
+
+                    <div class="flex sp-between">
+                        <!-- Login Information Checkbox -->
+                        <label for="keep-login-info" class="checkbox-container f-width text-primary-color">
+                            <input type="checkbox" name="keep-login-info" id="keep-login-info">
+                            <span class="checkmark flex"></span>
+                            Keep me logged in.
+                        </label>
+
+                        <!-- Link for Password Recovery -->
+                        <a href="#" class="link text-primary-color transition login-element"> Forgot password? </a>
+                    </div>
+
+                    <!-- Submit Buttons (One for login, other for sign up) -->
+                    <input type="submit" value="Log in" class="login-submit-btn white pointer transition login-element">
+                    <input type="submit" value="Sign up" class="signup-submit-btn white pointer transition sign-up-element">
+                </form>
+
+                <!-- Direction to Sign Up Page -->
+                <p class="login-para text-primary-color login-element">
+                    <span> Don't have an account? </span>
+                    <span class="form-link signup-link pointer transition"> Sign up </span>
+                </p>
+
+                <!-- Direction to Sign In Page -->
+                <p class="sign-up-para text-primary-color sign-up-element">
+                    <span> Already have an account? </span>
+                    <span class="form-link login-link pointer transition"> Sign in </span>
+                </p>
+            </div>
+        </div>
+        <!-- End of the Form Container -->
+
+        <!-- JS file -->
+        <script src="../js/login.js"></script>
+    </body>
+</html>

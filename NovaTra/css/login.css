@@ -1,0 +1,199 @@
+body {
+    background: url('../img/login.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 50%;
+    background: var(--bg-primary-color);
+}
+
+.form-container {
+    width: 45%;
+    min-width: 40rem;
+}
+
+.login-para { margin-bottom: 4rem; }
+
+form  label {
+    background: var(--bg-primary-color);
+    height: 2rem;
+    top: -10%;
+    left: 6%;
+    text-align: center !important;
+}
+
+form  input { background: var(--bg-primary-color); }
+
+form  .fa-solid {
+    right: 1.5rem;
+    top: 20%;
+}
+
+form > div:first-child  label { width: 6.5rem; }
+
+form > div:nth-child(2)  label { width: 4rem; }
+
+form > div:nth-child(3)  label { width: 6.2rem; }
+
+form  input {
+    border: 1px solid #aeaeae;
+    border-radius: 8px;
+    padding: 1.2rem 4.4rem 1.2rem  1.4rem;
+    margin-bottom: 3rem;
+}
+
+form  input:focus {
+    border-color: #62aacb;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 8px, rgba(0, 0, 0, 0.22) 0px 2px 2px;
+}
+
+form  input:focus + label { color: #62aacb; }
+
+form > div:nth-child(4) { margin-bottom: 3rem; }
+
+
+/* Custom checkbox style */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;                  /* spacing between box and text */
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;         /* prevents text selection on click */
+  position: relative;
+  left: 0;
+}
+
+/* Hide native checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom box */
+.checkmark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #62aacb;
+  border-radius: 4px;        
+  background-color: white;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.checkbox-container:hover .checkmark { border-color: #4b91a3; }
+
+/* Checked state */
+.checkbox-container input:checked + .checkmark {
+  background-color: #62aacb;
+  border-color: #62aacb;
+}
+
+/* Checkmark tick */
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 1px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Show tick when checked */
+.checkbox-container input:checked + .checkmark::after { display: block; }
+
+.checkbox-container + a {
+    width: 50%;
+    font-size: 1.4rem;
+    text-align: right;
+}
+
+.checkbox-container + a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--text-primary-color);
+}
+
+
+/* Animation for checkmark */
+@keyframes rotate {
+    0% {left:0; transform: rotateY(0deg);}
+    /* 25% {left:25%; transform: rotateY(90deg);} */
+    50% {right:50%; transform: rotateY(180deg);}
+    /* 75% {right:75%; transform: rotateY(270deg);} */
+    100% {right: 0; transform: rotateY(0deg);}
+}
+
+
+/* Submit button */
+.login-submit-btn, 
+.signup-submit-btn {
+    border: none;
+    width: 35%;
+    padding: 1.2rem  0;
+    background-color: #246fe8;
+    box-shadow: none !important;
+}
+
+.login-submit-btn:hover, 
+.signup-submit-btn:hover {
+    box-shadow: 0 4px 6px -2px #000 !important;
+}
+
+.pressed-btn:active { box-shadow: none; }
+
+.sign-up-para, 
+.login-para {
+    font-size: 1.4rem;
+}
+
+.signup-link:hover, 
+.login-link:hover {
+    color: #246fe8;
+    text-decoration: underline;
+}
+
+.wrapper  .sign-up-element { display: none; }
+
+
+.sign-up-wrapper  .login-element { display: none; }
+
+.sign-up-wrapper  .sign-up-element { display: block; }
+
+.sign-up-wrapper  .login-element { display: none; }
+
+.login-wrapper {
+    left: 0;
+    animation-name: moveLeft;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.sign-up-wrapper {
+    left: 50%;
+    animation-name: moveRight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+/* Animations to change between form pages */
+@keyframes moveRight {
+    0% {left: 0;}
+    50% {left: 50%}
+    100% {right: 0}
+}
+
+@keyframes moveLeft {
+    0% {left: 50%;}
+    100% {left: 0}
+}

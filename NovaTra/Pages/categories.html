@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Font Awesome Library -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Favicon -->
+         <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+        <!-- CSS stylesheets -->
+        <link rel="stylesheet" href="../css/utils.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/categories.css">
+        <link rel="stylesheet" href="../css/media.css">
+
+        <title> NovaTra </title>
+    </head>
+    
+    <body id="top">
+        <!-- START OF THE HEADER PART -->
+         <header class="fixed">
+            <div class="header-container flex sp-between section transition relative">
+                <!-- Logo and Title -->
+                <div class="logo-title flex">
+                    <div class="logo">
+                        <img src="../img/logo.png" class="block f-height f-width" alt="website logo">
+                    </div>
+                    <h1 class="title fs-35 fw-700">
+                        <span> Nova </span>
+                        <span> Tra </span>
+                    </h1>
+                </div>
+                
+                <!-- Main Navigation -->
+                <div class="top-menu flex sp-between transition relative after">
+                    <div class="x-mark-container">
+                        <i class="fa-solid fa-xmark text-primary-color"></i>
+                    </div>
+                    
+                    <div class="header-nav-container transition">
+                        <nav class="header-nav f-height flex">
+                            <ul class="navbar-list flex list">
+                                <li><a href="./index.html" class="text-primary-color capitalized fs-16 fw-700 link relative after block transition"> home </a></li>
+                                <li><a href="#" class="active-link text-primary-color capitalized fs-16 fw-700 link relative after block transition"> explore all </a></li>
+                                <li><a href="./suggested.html" class="text-primary-color capitalized fs-16 fw-700 link relative after block transition"> for you </a></li>
+                                <li><a href="./saved.html" class="text-primary-color capitalized fs-16 fw-700 link relative after block transition"> saved </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                
+                    <div class="right-side f-height flex">
+                        <!-- Search Box -->
+                        <div class="search-box-container transition">
+                            <div class="relative transition f-height f-width flex flex-end"> 
+                                <input type="text" name="search-box" class="block f-height fs-16 transition search-box" placeholder="Search news...">
+                                <i class="fa-duotone fa-solid fa-magnifying-glass search-icon pointer transition text-primary-color flex flex-centered"></i> <!--fa-beat when hovering-->
+                            </div>
+                        </div>
+                    
+                        <!-- Registration Button -->
+                        <div class="registration">
+                            <a href="./login.html" class="link capitalized fs-16 fw-700 white transition"> sign in </a>
+                        </div>
+
+                        <!-- Dark / Light Mode -->
+                        <div class="dark-light-mode-box flex flex-end pointer">
+                            <img src="../img/light-mode.png" class="mode-img f-height transition" alt="light mode icon">
+                            <!-- <img src="../img/dark-mode.png" class="f-height" alt="dark mode icon"> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu Bar -->
+                <div class="menu-bar-container text-primary-color">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <!-- Category Menu -->
+                <div class="category-menu">
+                    <nav class="category-menu-nav">
+                        <ul class="category-menu-list list flex sp-around fs-16 text-primary-color">
+                            <li class="pointer transition"> Politics &amp; World </li>
+                            <li class="pointer transition"> Business &amp; Economy </li>
+                            <li class="pointer transition"> Science &amp; Technology </li>
+                            <li class="pointer transition"> Lifestyle &amp; Culture </li>
+                            <li class="pointer transition"> Health &amp; Education </li>
+                            <li class="pointer transition"> Sports </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+         </header>
+        <!-- END OF THE HEADER PART -->
+
+
+        <!-- START OF THE MAIN PART -->
+        <main class="relative">
+            <!-- Preloader -->
+            <div id="preloader">
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- Start of the Filters Menu -->
+            <aside class="fixed filters absolute">
+                <div class="filters-menu-container">
+                    <!-- Filters Menu Icon -->
+                    <div class="filters-menu-icon transition relative pointer">
+                        <i class="fa-solid fa-filter fs-24 flex flex-centered white transition"></i>
+                        <span class="absolute fs-16 white transition"> Search using filters </span>
+                    </div>
+
+                    <section class="filter-items absolute transition">
+                        <!-- Category -->
+                        <div class="filter-item category-filter relative">
+                            <select name="" id="" class="fs-16 capitalized pointer transition">
+                                <option value="null"> All categories </option>
+                                <optgroup class="option-group" label="Politics &amp; World">
+                                    <option value="politics">  Politics </option>
+                                    <option value="world">  World </option>
+                                    <option value="crime">  Crime </option>
+                                    <option value="domestic">  Domestic </option>
+                                </optgroup>
+
+                                <optgroup class="option-group" label="Business &amp; Economy">
+                                    <option value="business">  Business </option>
+                                    <option value="top">  Top </option>
+                                </optgroup>
+
+                                <optgroup class="option-group" label="Science &amp; Technology">
+                                    <option value="science">  Science </option>
+                                    <option value="technology">  Technology </option>
+                                </optgroup>
+
+                                <optgroup class="option-group" label="Lifestyle &amp; Culture">
+                                    <option value="lfestyle">  Lifestyle </option>
+                                    <option value="entertainment">  Entertainment </option>
+                                    <option value="food">  Food </option>
+                                    <option value="tourism">  Tourism </option>
+                                </optgroup>
+                                
+                                <optgroup class="option-group" label="Health &amp; Education">
+                                    <option value="health">  Health </option>
+                                    <option value="education">  Education </option>
+                                </optgroup>
+
+                                <optgroup class="option-group" label="Sports">
+                                    <option value="sports">  Sports </option>
+                                </optgroup>
+
+                                <optgroup class="option-group" label="Other">
+                                    <option value="other">  Other </option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <!-- Time -->
+                        <div class="filter-item time-filter relative">
+                            <select name="" id="" class="fs-16 capitalized pointer transition">
+                                <option value="all-time">  All time </option>
+                                <option value="last-hour">  Last hour </option>
+                                <option value="last-day">  Last Day </option>
+                                <option value="last-week">  Last week </option>
+                                <option value="last-month">  Last month </option>
+                                <option value="last-year">  Last year </option>
+                            </select>
+                        </div>
+                        
+                        <!-- Order -->
+                        <div class="filter-item sorting-filter relative">
+                            <select name="" id="" class="fs-16 capitalized pointer transition">
+                                <option value="by-default">  By date (Default) </option>
+                                <option value="by-source-prority">  Sort by source priority </option>
+                            </select>
+                        </div>
+                        
+                        <!-- Country -->
+                        <div class="filter-item country-filter">
+                            <input type="text" placeholder="Search by countries" class="country-input fs-16 transition">
+                            <div class="search-values-container">
+                            </div>
+                        </div>
+
+                        <!-- Language -->
+                        <div class="filter-item language-filter">
+                            <input type="text" placeholder="Search by languages" class="language-input fs-16 transition">
+                            <div class="search-values-container"></div>
+                        </div>
+
+                        <!-- Submit Button for Filter Settings -->
+                        <div class="filter-item submit-btn transition">
+                            <input type="submit" value="Search" class="fs-16 transition pointer">
+                        </div>
+                    </section>
+                </div>
+            </aside>
+            <!-- End of the Filters Menu -->
+
+
+            <!-- Start of the Breaking News Section -->
+            <section class="news-section breaking-news">
+                <div class="breaking-news-container section">
+                    <h3 class="uppercased section-title fw-900 text-primary-color"> breaking news </h3>
+                    <div class="news-cards-container"></div>
+
+                    <!-- Lazy loading -->
+                    <div class="loader hidden">
+                        <div class="spinner"></div>
+                    </div>
+
+                    <!-- Button to load more news from API -->
+                    <div>
+                        <button class="pointer transition white centered block fs-16 uppercased load-more-btn"> Load more </button>
+                    </div>
+                </div>
+            </section>
+            <!-- End of the Breaking News Section -->
+
+            
+            <!-- Back to top button -->
+            <div class="link-to-top-btn transition flex flex-centered pointer">
+                <a href="#top" class="link white">
+                    <i class="fa-solid fa-angle-up fa-2x"></i>
+                </a>
+            </div>
+         </main>
+        <!-- END OF THE MAIN PART -->
+
+
+        <!-- START OF THE FOOTER PART -->
+         <footer>
+            <div class="footer-container section">
+                <div class="first-row flex sp-between">
+                    <!-- Logo & Title -->
+                    <div class="logo-title flex">
+                        <div class="logo">
+                            <img src="../img/logo.png" class="block f-height f-width" alt="website logo">
+                        </div>
+                        <h1 class="title fw-700 fs-24">
+                            <span> Nova </span>
+                            <span> Tra </span>
+                        </h1>
+                    </div>
+
+                    <!-- Footer (second) Navigation Bar -->
+                    <section class="secondary-navigation-container">
+                        <nav class="secondary-navigation">
+                            <ul class="list flex flex-centered">
+                                <li>
+                                    <a href="#" class="link fs-16 fw-700 transition after block relative"> About </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link fs-16 fw-700 transition after block relative"> Terms of Use </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link fs-16 fw-700 transition after block relative"> Privacy Policy </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link fs-16 fw-700 transition after block relative">Manage Cookies </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link fs-16 fw-700 transition after block relative"> Contact </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+
+                    <!-- Subscription box -->
+                    <div class="subscription-box flex">
+                            <input type="email" name="search-box" class="block f-height fs-16 transition" placeholder="Your Email">
+                            <button class="subscription-button pointer transition white f-height"> Subscribe </button>
+                    </div>
+                </div>
+
+                <div class="second-row">
+                    <!-- Social Media Links -->
+                    <div class="social-media-icons flex flex-centered">
+                        <a href="" class="link"><i class="fa-brands fa-youtube text-primary-color transition fs-24"></i></a>
+                        <a href="" class="link"><i class="fa-brands fa-instagram text-primary-color transition fs-24"></i></a>
+                        <a href="" class="link"><i class="fa-brands fa-facebook text-primary-color transition fs-24"></i></a>
+                        <a href="" class="link"><i class="fa-brands fa-x-twitter text-primary-color transition fs-24"></i></a>
+                        <a href=""><i class="fa-brands fa-square-linkedin text-primary-color transition fs-24"></i></a>
+                    </div>
+                </div>
+
+                <div class="third-row">
+                    <!-- Copyright Information -->
+                    <p class="copyright fs-12">
+                        © 2025 Your News Website. All rights reserved. Unauthorized use and/or duplication of this material without express and written permission is strictly prohibited.
+                    </p>
+                </div>
+            </div>
+         </footer>
+        <!-- END OF THE FOOTER PART -->
+
+        <!-- JS files -->
+         <script type="module" src="../js/main.js"></script>
+         <script type="module" src="../js/categories.js"></script>
+    </body>
+</html>

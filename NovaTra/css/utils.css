@@ -1,0 +1,144 @@
+/* RESETTING BROWSER DEFAULT VALUES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+input, 
+button {
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+/* BUILT-IN CLASSES*/
+/* Centered elements */
+.centered { margin: 0  auto; }
+
+
+/* Colors */
+.white { color: #fff; }
+.light-gray { color: #aaa; }
+
+
+/* Cursors */
+.pointer { cursor: pointer; }
+
+
+/* Displays */
+.block { display: block; }
+
+
+/* Dimensions */
+.f-height { height: 100%; }
+.f-width { width: 100%; }
+
+
+/* Flex containers */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-centered {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-start {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-column { flex-direction: column; }
+
+.flex-end { justify-content: flex-end; }
+
+.sp-around { justify-content: space-around; }
+
+.sp-between { justify-content: space-between; }
+
+
+/* Font-sizes */
+.fs-12 { font-size: 1.2rem; }
+.fs-16 { font-size: 1.6rem; }
+.fs-24 { font-size: 2.4rem; }
+
+
+/* Font weights */
+.fw-700 { font-weight: 700; }
+.fw-900 { font-weight: 900; }
+
+
+/* Lists */
+.list { list-style: none; }
+
+
+/* Links */
+.link { text-decoration: none; }
+
+
+/* Menu bar */
+.menu-bar-container {
+    display: none;
+    font-size: 3rem;
+}
+
+
+/* Positions */
+.absolute { position: absolute; }
+
+.relative { position: relative; }
+
+.fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+
+/* Pseudo-elements */
+.after::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+
+/* Sections */
+.section { margin: 0 auto; }
+.section-title { text-align: center; }
+
+
+/* Text transforms */
+.capitalized { text-transform: capitalize; }
+.uppercased { text-transform: uppercase; }
+
+
+/* Transition */
+.transition { transition: all .3s; }
+
+
+/* Link to top button */
+.link-to-top-btn {
+    opacity: 0;
+    bottom: 1rem;
+    right: 1rem;
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    z-index: 3;
+}
